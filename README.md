@@ -20,7 +20,8 @@ If you're new to Git and GitHub, don't worry! We'll start from the basics and gu
 1. Open any browser and search for **Git download**.
 2. Download Git for your specific operating system (Windows, macOS, or Linux).
 
-![git download.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d41162a9-3825-4fe4-9631-735d5dd45934/e4fa44b4-ca76-4d63-8f7b-7107cb6e27bb/git_download.png)
+![git download](https://github.com/user-attachments/assets/88f35455-82ad-4fad-a2f6-19813a19ea79)
+
 
 3. Install Git on your system.
 4. During installation, you'll also get **Git Bash**, a terminal ideal for learning Git commands.
@@ -29,9 +30,9 @@ If you're new to Git and GitHub, don't worry! We'll start from the basics and gu
 
 5. Open [github.com](https://github.com) and create an account.
 
-![github signup.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d41162a9-3825-4fe4-9631-735d5dd45934/ad08353b-dbed-4ad7-9103-28d5c49154eb/github_signup.png)
+![github signup](https://github.com/user-attachments/assets/b994a539-7bd3-45a4-8fad-ddc967dbf12f)
+![github username](https://github.com/user-attachments/assets/d47f235d-1b1d-47b8-bb40-4dd1b5daa292)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d41162a9-3825-4fe4-9631-735d5dd45934/97c9c08c-ab3c-4bda-8e48-089f496d3a2a/1a93c856-21e6-4ac2-b661-0c1154cb3149.png)
 
 ---
 
@@ -57,7 +58,8 @@ After installation, follow these steps to configure Git:
 
 ### Step 3: Cloning a Repository
 
-1. Open the GitHub repository you want to copy, click on the "Code" button, and copy the repository link.
+1. Open the GitHub repository you want to copy, click on the "Code" button, and copy the repository link.![cloning](https://github.com/user-attachments/assets/2cc9d54b-5ee3-46f0-83b0-ef14d0497427)
+
 2. Create a folder on your computer where you want to clone the repository.
 3. Open Git Bash and navigate to the folder you created using the command:
 
@@ -76,21 +78,26 @@ After installation, follow these steps to configure Git:
 ---
 
 ### Step 4: Basic Git Commands
+There are two ways to open a specific folder or repository:
+
+cd <folder directory>
+
+or right-click the folder on your computer, select "More options," and choose "Open Git Bash here" 
+![open git bash](https://github.com/user-attachments/assets/544f594b-36fe-41c7-b199-0149549e8e82)
 
 Here are some essential Git commands you'll use frequently:
 
-| **Command**              | **Description**                                                             |
-|--------------------------|-----------------------------------------------------------------------------|
-| `git init`               | Initializes a new Git repository in the current directory.                  |
-| `git status`             | Shows the status of your repository (e.g., changes, untracked files).       |
-| `git add <file>`         | Adds specific files to the staging area.                                    |
-| `git add .`              | Adds all changes in the directory to the staging area.                      |
-| `git commit -m "message"`| Saves changes to the repository with a descriptive message.                 |
-| `git log`                | Displays the commit history.                                                |
-| `git diff`               | Shows changes between commits, the working directory, and the staging area. |
-| `git clone <url>`        | Clones an existing repository from GitHub to your local machine.            |
-| `git push`               | Pushes local changes to the remote repository.                              |
-| `git pull`               | Fetches and merges changes from the remote repository.                      |
+| **Command**              | **Description**                                                             | **reference image**  |
+|--------------------------|-----------------------------------------------------------------------------|-----------------------------|
+| `git init`               | Initializes a new Git repository in the current directory.                  |![Screenshot 2025-01-11 133816](https://github.com/user-attachments/assets/28e1db67-fc12-4b64-97a4-64cb4d22e0bf)|
+| `git status`             | Shows the status of your repository (e.g., changes, untracked files).       |![git status](https://github.com/user-attachments/assets/3ffca7c2-d566-49ff-ba58-e9c35b70ca24)|
+| `git add <file>`         | Adds specific files to the staging area.                                    |![git add](https://github.com/user-attachments/assets/931ab7e0-d1a3-4ad3-9234-b140dcf2d338)|
+| `git add .`              | Adds all changes in the directory to the staging area.                      |![git add2](https://github.com/user-attachments/assets/0e7e5771-c498-4372-842d-17d6c7df9fda)|
+| `git commit -m "message"`| Saves changes to the repository with a descriptive message.                 |![git commit](https://github.com/user-attachments/assets/0a1e4735-0275-450d-8588-62d1aecae526)|
+| `git log`                | Displays the commit history.                                                |![git log](https://github.com/user-attachments/assets/b94b0bde-8dab-412f-9841-bbbf8c6fe66c)|
+| `git push`               | Pushes local changes to the remote repository.                              |![git push](https://github.com/user-attachments/assets/80df6330-6581-4b27-a4e7-9fba5102d325)|
+| `git pull`               | Fetches and merges changes from the remote repository.                      |![git pull](https://github.com/user-attachments/assets/d5faa43b-01d7-40ee-a0ed-b0308843f144)
+|
 
 ---
 
@@ -110,7 +117,98 @@ Here are some essential Git commands you'll use frequently:
         ```
 
 ---
+### Branching Workflow
 
+At ChaiCode, we use a structured branching strategy to manage our projects effectively:
+
+- **`main` branch**: The stable production branch.
+- **`development` branch**: The integration branch for ongoing development.
+- **Feature branches**: Separate branches for working on specific features or fixes. These branches are merged into `development` once complete.
+
+#### Creating and Switching Branches
+
+To create and switch to a new branch:
+
+```bash
+git branch feature/tea-menu
+git checkout feature/tea-menu
+```
+
+Alternatively, use:
+
+```bash
+git checkout -b feature/tea-menu
+```
+
+#### Merging Branches
+
+To merge a feature branch into `development`:
+
+1. Switch to the `development` branch:
+
+    ```bash
+    git checkout development
+    ```
+
+2. Merge the feature branch:
+
+    ```bash
+    git merge feature/tea-menu
+    ```
+
+#### Resolving Conflicts
+
+If there are merge conflicts:
+
+1. Open the conflicting files and make the necessary edits.
+2. Add the resolved files to the staging area:
+
+    ```bash
+    git add <file-name>
+    ```
+
+3. Commit the merge:
+
+    ```bash
+    git commit
+    ```
+
+---
+
+### Creating a Pull Request (PR) on GitHub
+
+A pull request (PR) is used to propose changes and collaborate on code reviews. Follow these steps to create a PR:
+
+1. Push your branch to GitHub:
+
+    ```bash
+    git push origin <branch-name>
+    ```
+![creating new branch](https://github.com/user-attachments/assets/103f8fc5-a019-49de-9bae-dcf0e39f663d)
+![git pull request 2](https://github.com/user-attachments/assets/1986bdca-0517-47b6-bb77-65def789a602)
+
+![pull request](https://github.com/user-attachments/assets/379ca479-24bf-4fcf-873c-9c3f6e529a76)
+4155-49e1-b941-094987b5ce73)
+
+
+2. Go to the repository on GitHub and click on **Pull Requests**.
+3. Click **New Pull Request**.
+4. Select the base branch and compare branch.
+
+#### Writing a PR Description
+
+- Provide a clear and concise description of the changes.
+- Include the purpose of the PR and any relevant context.
+- Mention related issues or tasks using keywords like `Fixes #issue-number`.
+
+#### Requesting Code Reviews
+
+- Add reviewers who are familiar with the codebase or the changes.
+- Highlight specific areas in the code that require attention.
+
+*(Insert Screenshot Here)*
+
+---
 ### Best Practices for Using Git and GitHub
 
 - **Write Clear Commit Messages:** Use descriptive messages that explain what your changes do. Example:
