@@ -245,6 +245,3 @@ Use meaningful and consistent branch naming conventions:
 - [ChaiAurCode Docs](https://docs.chaicode.com/git-and-github/)
 
 Welcome aboard, and happy coding! 🚀
-
-
-Welcome aboard, and happy coding! 🚀
