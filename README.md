@@ -189,5 +189,5 @@ Use meaningful and consistent branch naming conventions:
 - [Official Git Documentation](https://git-scm.com/doc)
 - [ChaiAurCode Docs](https://docs.chaicode.com/git-and-github/)
 
-Welcome aboard, and happy coding! 🚀
+Welcome aboard, and happy coding! 
 
