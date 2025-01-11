@@ -80,7 +80,7 @@ After installation, follow these steps to configure Git:
 ### Step 4: Basic Git Commands
 There are two ways to open a specific folder or repository:
 
-cd <folder directory>
+cd <folder_directory>
 
 or right-click the folder on your computer, select "More options," and choose "Open Git Bash here" 
 ![open git bash](https://github.com/user-attachments/assets/544f594b-36fe-41c7-b199-0149549e8e82)
@@ -96,8 +96,7 @@ Here are some essential Git commands you'll use frequently:
 | `git commit -m "message"`| Saves changes to the repository with a descriptive message.                 |![git commit](https://github.com/user-attachments/assets/0a1e4735-0275-450d-8588-62d1aecae526)|
 | `git log`                | Displays the commit history.                                                |![git log](https://github.com/user-attachments/assets/b94b0bde-8dab-412f-9841-bbbf8c6fe66c)|
 | `git push`               | Pushes local changes to the remote repository.                              |![git push](https://github.com/user-attachments/assets/80df6330-6581-4b27-a4e7-9fba5102d325)|
-| `git pull`               | Fetches and merges changes from the remote repository.                      |![git pull](https://github.com/user-attachments/assets/d5faa43b-01d7-40ee-a0ed-b0308843f144)
-|
+| `git pull`               | Fetches and merges changes from the remote repository.                      |![git pull](https://github.com/user-attachments/assets/d5faa43b-01d7-40ee-a0ed-b0308843f144)|
 
 ---
 
@@ -187,8 +186,7 @@ A pull request (PR) is used to propose changes and collaborate on code reviews. 
 ![creating new branch](https://github.com/user-attachments/assets/103f8fc5-a019-49de-9bae-dcf0e39f663d)
 ![git pull request 2](https://github.com/user-attachments/assets/1986bdca-0517-47b6-bb77-65def789a602)
 
-![pull request](https://github.com/user-attachments/assets/379ca479-24bf-4fcf-873c-9c3f6e529a76)
-4155-49e1-b941-094987b5ce73)
+
 
 
 2. Go to the repository on GitHub and click on **Pull Requests**.
@@ -206,7 +204,8 @@ A pull request (PR) is used to propose changes and collaborate on code reviews. 
 - Add reviewers who are familiar with the codebase or the changes.
 - Highlight specific areas in the code that require attention.
 
-*(Insert Screenshot Here)*
+![pull request](https://github.com/user-attachments/assets/379ca479-24bf-4fcf-873c-9c3f6e529a76)
+4155-49e1-b941-094987b5ce73)
 
 ---
 ### Best Practices for Using Git and GitHub
